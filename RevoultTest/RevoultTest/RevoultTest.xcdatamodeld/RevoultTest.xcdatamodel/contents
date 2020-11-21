@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14903" systemVersion="18G87" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="RateConversion" representedClassName="RateConversion" syncable="YES" codeGenerationType="class">
+        <attribute name="countryCodeFrom" optional="YES" attributeType="String"/>
+        <attribute name="countryCodeTo" optional="YES" attributeType="String"/>
+        <attribute name="countryNameFrom" optional="YES" attributeType="String"/>
+        <attribute name="countryNameTo" optional="YES" attributeType="String"/>
+        <attribute name="rate" optional="YES" attributeType="String"/>
+        <attribute name="serachRatesKey" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="RateConversion" positionX="-63" positionY="-18" width="128" height="133"/>
+    </elements>
+</model>

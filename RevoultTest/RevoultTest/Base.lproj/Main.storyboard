@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Currency Country View Controller-->
+        <scene sceneID="SSq-sD-373">
+            <objects>
+                <viewController storyboardIdentifier="CurrencyCountryViewController" id="n0c-gl-WU8" customClass="CurrencyCountryViewController" customModule="RevoultTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MAa-rM-Io5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rqq-fk-VoV">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YYo-MN-ydw">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CurrencyConverterCell" rowHeight="78" id="ZDI-OO-xuS" customClass="CurrencyConverterCell" customModule="RevoultTest" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="414" height="78"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZDI-OO-xuS" id="ysj-Yy-5PI">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="78"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AnZ-la-hDD">
+                                                            <rect key="frame" x="0.0" y="0.0" width="414" height="78"/>
+                                                            <color key="backgroundColor" red="0.90588235294117647" green="0.90588235294117647" blue="0.95858997280419012" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </view>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xkH-uT-yWz">
+                                                            <rect key="frame" x="16" y="19" width="40" height="40"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="40" id="sI5-2P-YHK"/>
+                                                                <constraint firstAttribute="height" constant="40" id="xeR-sT-LxW"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Country Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cwq-ys-PWw">
+                                                            <rect key="frame" x="146" y="29.5" width="232" height="19"/>
+                                                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                                                            <color key="textColor" red="0.098039215686274508" green="0.10980392156862745" blue="0.12156862745098039" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fj5-LQ-MrD">
+                                                            <rect key="frame" x="72" y="29.5" width="56" height="19"/>
+                                                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                                                            <color key="textColor" red="0.54509803921568623" green="0.58431372549019611" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailingMargin" secondItem="cwq-ys-PWw" secondAttribute="trailing" constant="16" id="2XG-hA-xWz"/>
+                                                        <constraint firstAttribute="trailing" secondItem="AnZ-la-hDD" secondAttribute="trailing" id="GjE-GA-H7S"/>
+                                                        <constraint firstItem="xkH-uT-yWz" firstAttribute="centerY" secondItem="ysj-Yy-5PI" secondAttribute="centerY" id="MFa-kE-XRV"/>
+                                                        <constraint firstAttribute="bottom" secondItem="AnZ-la-hDD" secondAttribute="bottom" id="Rbl-3X-wjR"/>
+                                                        <constraint firstItem="AnZ-la-hDD" firstAttribute="top" secondItem="ysj-Yy-5PI" secondAttribute="top" id="Tzg-VM-t0n"/>
+                                                        <constraint firstItem="xkH-uT-yWz" firstAttribute="leading" secondItem="ysj-Yy-5PI" secondAttribute="leading" constant="16" id="WBd-dA-ZC1"/>
+                                                        <constraint firstItem="cwq-ys-PWw" firstAttribute="centerY" secondItem="xkH-uT-yWz" secondAttribute="centerY" id="YJe-f7-j3p"/>
+                                                        <constraint firstItem="fj5-LQ-MrD" firstAttribute="leading" secondItem="xkH-uT-yWz" secondAttribute="trailing" constant="16" id="gPk-e1-9kb"/>
+                                                        <constraint firstItem="AnZ-la-hDD" firstAttribute="leading" secondItem="ysj-Yy-5PI" secondAttribute="leading" id="lZb-Jw-Ztu"/>
+                                                        <constraint firstItem="fj5-LQ-MrD" firstAttribute="centerY" secondItem="xkH-uT-yWz" secondAttribute="centerY" id="uQd-ZJ-PuM"/>
+                                                        <constraint firstItem="cwq-ys-PWw" firstAttribute="leading" secondItem="fj5-LQ-MrD" secondAttribute="trailing" constant="18" id="ybG-vv-H3V"/>
+                                                    </constraints>
+                                                </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="imgCountry" destination="xkH-uT-yWz" id="Yft-94-VgK"/>
+                                                    <outlet property="labelCountryCode" destination="fj5-LQ-MrD" id="OR8-LW-rMo"/>
+                                                    <outlet property="labelCountryName" destination="cwq-ys-PWw" id="fJZ-fX-OZs"/>
+                                                    <outlet property="selectedCellBackgroundView" destination="AnZ-la-hDD" id="5vb-LJ-MBg"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="YYo-MN-ydw" secondAttribute="trailing" id="9XR-Zd-5Oi"/>
+                                    <constraint firstItem="YYo-MN-ydw" firstAttribute="top" secondItem="rqq-fk-VoV" secondAttribute="top" id="Vjv-Ge-7DD"/>
+                                    <constraint firstAttribute="bottom" secondItem="YYo-MN-ydw" secondAttribute="bottom" id="g4r-0H-ali"/>
+                                    <constraint firstItem="YYo-MN-ydw" firstAttribute="leading" secondItem="rqq-fk-VoV" secondAttribute="leading" id="row-sp-sQQ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="FLw-1z-Jfo" firstAttribute="bottom" secondItem="rqq-fk-VoV" secondAttribute="bottom" id="4dM-h2-OLm"/>
+                            <constraint firstItem="rqq-fk-VoV" firstAttribute="top" secondItem="FLw-1z-Jfo" secondAttribute="top" id="6dI-Ej-yfU"/>
+                            <constraint firstItem="rqq-fk-VoV" firstAttribute="leading" secondItem="FLw-1z-Jfo" secondAttribute="leading" id="Cyo-Zf-ET6"/>
+                            <constraint firstItem="FLw-1z-Jfo" firstAttribute="trailing" secondItem="rqq-fk-VoV" secondAttribute="trailing" id="sIx-RC-jlc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FLw-1z-Jfo"/>
+                    </view>
+                    <connections>
+                        <outlet property="countryListView" destination="YYo-MN-ydw" id="2jN-rs-jtr"/>
+                        <outlet property="viewLeadingConstraint" destination="Cyo-Zf-ET6" id="WXC-BI-uhA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sal-vL-xRf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-136.23188405797103" y="12.723214285714285"/>
+        </scene>
+        <!--Currency Converter View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="CurrencyConverterViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="CurrencyConverterViewController" customModule="RevoultTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T9Q-aM-JQU">
+                                <rect key="frame" x="0.0" y="105" width="414" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="heM-am-31n"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="150" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="190" maxY="0.0"/>
+                                <state key="normal" title="Add currency pair" image="plusIcon">
+                                    <color key="titleColor" red="0.0" green="0.45882352941176469" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.45882352939999999" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="AddCurrency:" destination="BYZ-38-t0r" eventType="touchUpInside" id="izP-so-kNs"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SEy-1V-cWC">
+                                <rect key="frame" x="0.0" y="179" width="414" height="683"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Kea-41-tMG">
+                                <rect key="frame" x="20" y="368" width="374" height="160"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plusIcon" translatesAutoresizingMaskIntoConstraints="NO" id="i4F-nU-IKA">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="aFZ-G6-HE3"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yww-oa-RzU">
+                                        <rect key="frame" x="0.0" y="60" width="374" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="LoS-FP-Igp"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                                        <state key="normal" title="Add currency pair">
+                                            <color key="titleColor" red="0.0" green="0.45882352939999999" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.0" green="0.45882352939999999" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="AddCurrency:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RZp-qA-BYg"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose a currency pair to compare their live rates" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bFZ-Mq-s4U">
+                                        <rect key="frame" x="0.0" y="110" width="374" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="4Uu-iF-QHc"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rates &amp; converter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ypw-Ia-900">
+                                <rect key="frame" x="0.0" y="48" width="414" height="19"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                                <color key="textColor" red="0.098039215686274508" green="0.10980392156862745" blue="0.12156862745098039" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="T9Q-aM-JQU" secondAttribute="trailing" id="0GI-2j-fdN"/>
+                            <constraint firstItem="T9Q-aM-JQU" firstAttribute="top" secondItem="ypw-Ia-900" secondAttribute="bottom" constant="38" id="6KE-Ba-AV3"/>
+                            <constraint firstItem="SEy-1V-cWC" firstAttribute="top" secondItem="T9Q-aM-JQU" secondAttribute="bottom" constant="10" id="Atw-jl-18I"/>
+                            <constraint firstItem="ypw-Ia-900" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="4" id="AvB-bN-F0L"/>
+                            <constraint firstItem="SEy-1V-cWC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ERC-TT-fFG"/>
+                            <constraint firstItem="T9Q-aM-JQU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="EwB-QP-0ok"/>
+                            <constraint firstItem="Kea-41-tMG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="PYr-Rf-Rx9"/>
+                            <constraint firstItem="ypw-Ia-900" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TAS-qC-bCF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SEy-1V-cWC" secondAttribute="bottom" id="Tyo-Dw-5Gz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ypw-Ia-900" secondAttribute="trailing" id="ZlF-Ry-LzN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SEy-1V-cWC" secondAttribute="trailing" id="bky-iR-Ol4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Kea-41-tMG" secondAttribute="trailing" constant="20" id="igD-a5-psB"/>
+                            <constraint firstItem="Kea-41-tMG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="z6c-fT-yJY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="AddCurrencyTop" destination="T9Q-aM-JQU" id="Og9-pf-bke"/>
+                        <outlet property="AddCurrencyView" destination="Kea-41-tMG" id="pWP-4w-fHC"/>
+                        <outlet property="DataListView" destination="SEy-1V-cWC" id="a8k-uV-Fo2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-901" y="13"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="plusIcon" width="40" height="40"/>
+    </resources>
+</document>
