@@ -2,8 +2,7 @@
 Can get the exchange rates of listed countries.
 ## Description
 1) Get the listed countries code and details from json file.
-2) Compare the currency rates.
-3) Can see the currency exchange rates in every second.
+2) Compare the currency rates in every second.
 
 ## Functionality
 1) Option to select two countries and can check the exchange rates.
